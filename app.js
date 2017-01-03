@@ -1,4 +1,4 @@
-'use strict';
+
 /*---------------------Portfolio of projects swipe left or right---------------*/
 
 var slideCounter = 1;
@@ -22,7 +22,7 @@ function showSlides(n) {
   for ( i = 0; i < dot.length; i++){
     dot[i].className - dot[i].className.replace('active', '');
   }
-  slides[slideCounter - 1]style.display = 'block';
+  slides[slideCounter - 1].style.display = 'block';
   dot[slideCounter - 1].className += 'active';
 }
 showSlides();
