@@ -51,10 +51,10 @@ button{
 .nav ul li a:hover:not(.active){
   background-color: #ADD8E6;
 }
-.nav ul li a.active{background-color: #ADD8E6;}
+/*.nav ul li a.active{background-color: #ADD8E6;}
 @media screen and (max-width: 600px){
 .nav ul li{float: none;}
-}
+}*/
 /*////////////////////////homepage//////////////////////*/
 
 #selfie{
@@ -69,23 +69,79 @@ button{
   height: auto;
   left: 375px;
 }
-#gallery ul{
-  position: relative;
-  display: inline-block;
-  top: 400px;
+.gallery{
+  margin: 0 auto;
+  width:60%;
+  background-color: ;
+  overflow: hidden;
+  height: 500px;
+  position: absolute;
+  margin-left: 250px;
+  border: solid 2px red;
 }
-#gallery h1{
-  position: relative;
-}
-#gallery li{
-  position: relative;
+.gallery ul {
+  margin: 0;
   list-style: none;
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  top: 0;
+  border: solid 2px blue;
+}
+.gallery ul li {
+  padding-top: 75px;
+  margin: 0;
+  width: 33.333333%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: solid 2px green;
+}
+.gallery li img {
+  border: none;
+  width: 75%;
+  height:100%;
+}
+.gallerytop{
+  margin:0 auto;
+ }
+ .gallery button{
+  position:relative;
   display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-color: #000000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  opacity: .2
+ }
+ button.previous {
+   left: 0;
+ }
+button.next{
+   right: 0;
+ }
 
-}
-img{
 
-}
+.title {
+ width: 96%;
+ padding: 2%;
+ left: 0;
+ bottom: 0;
+ background: rgba(0,0,0,.5);
+ color: #fff;
+ text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+ font-size: 14px;
+ line-height: 18px;
+ }
 @media screen and (max-width: 600px){
 .nav ul li{float: none;}
 #indexp{
@@ -94,8 +150,4 @@ left:2%;
 top: 65%;
 margin-bottom: 10%;
 margin-top: 10%;
-}
-#gallery{
-  margin-top:25%;
-}
 }

@@ -4,11 +4,30 @@
     <meta charset="utf-8">
     <meta <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script id="project-template" type="text/x-handlers-template">
+    <div class="gallery">
+    <ul class="galleryUl">
+      <li>
+        <time class='gallerytop' pubdate datetime="{{dateCreated}}"></time>
+        <time class='gallerytop' pubdate datetime="{{dateCreated}}">Created on:{{dateCreated}}</time>
+           <h2 class="title">{{title}}
+           </h2>
+        <a href="{{projectPage}}">
+        <img src="{{imageUrl}}"/></img>
+        <a/>
+        <p class="title">{{title}}
+        </p>
+      </li>
+    </ul>
+    <button class="previous">prev</button>
+    <button class="next">next</button>
+  </div>
+    </script>
     <title></title>
   </head>
   <body>
-    <div class="mainimg"></div>
     <header id="header">
       <h1>Welcome!</h1>
       <nav class="nav">
@@ -20,61 +39,16 @@
         </ul>
       </nav>
     </header>
+    <img id="selfie" src="assets/temp pic.jpg" height="400px" width="300px"></img>
+    <div class="mainimg">
+    <div class="placeholder"></div>
+ </div>
 
-     
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <script  src="objectData.js"></script>
-      <script src="app.js" ></script>
-      <script src="projects.js"></script>
-
-
-
-  </body>
-</html>
-
-
+ <script src="array.js"></script>
+ <script  src="constructor.js"></script>
+ <script src="portfolio.js"></script>
+ <script src="slideshow.js"></script>
 </body>
 </html>
