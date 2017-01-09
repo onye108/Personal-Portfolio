@@ -21,6 +21,6 @@ projectsArray.sort(function(a, b) {
 projectsArray.forEach(function(element) {
   portfolio.push(new Project(element));
 });
-portfolio.forEach(function(section) {
-  $('#gallery').append(section.toHtml());
+portfolio.forEach(function(a) {
+$('.placeholder').append(a.toHtml());
 });
