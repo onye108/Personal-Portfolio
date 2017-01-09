@@ -1,5 +1,5 @@
-var projectsArray =[
-  {
+projectsArray =[
+    {
     title: 'Salmon Cookies',
     imageUrl:  'assets/salmon.png',
     projectPage: 'https://onye108.github.io/cookie-stand/',
