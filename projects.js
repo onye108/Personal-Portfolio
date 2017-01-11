@@ -3,15 +3,15 @@
 $(document).ready(function(){
   $('#clicker').click(function(event){
     event.preventDefault();
-    $('body').fadeOut(2500, redirect);
+    $('body').fadeOut(500, redirect);
   });
   function redirect() {
-    $(location).attr('href', 'main.html');
+    $(location).attr('href', 'index.html');
   }
 });
 
-$('.imageClicker').click(function(event){
-  event.preventDefault();
-  $('a').open('href');
-
-});
+// $('.imageClicker').click(function(event){
+//   event.preventDefault();
+//   $('a').open('href');
+//
+// });

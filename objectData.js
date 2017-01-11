@@ -1,7 +1,7 @@
 projectsArray =[
     {
     title: 'Salmon Cookies',
-    imageUrl:  'assets/salmon.png',
+    imageUrl:  src="assets/salmon.png" height="100px" width="300px" ,
     projectPage: 'https://onye108.github.io/cookie-stand/',
     dateCreated:'2016/12/15'
   },
@@ -19,7 +19,7 @@ projectsArray =[
   },
   {
     title: 'Battleships!',
-    imageUrl: 'assets/DestroyerDestroying.jpg',
+    imageUrl: "assets/DestroyerDestroying.jpg" height="100px" width="300px",
     projectPage:'https://onye108.github.io/battleship/',
     dateCreated:'2016/12/22'
   }
