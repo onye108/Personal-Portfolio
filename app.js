@@ -22,5 +22,5 @@ projectsArray.forEach(function(element) {
   portfolio.push(new Project(element));
 });
 portfolio.forEach(function(a) {
-$('.placeholder').append(a.toHtml());
+$('.carousel-inner > .item').append(a.toHtml());
 });
