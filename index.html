@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script id="project-template" type="text/x-handlebars-template">
+      <div class="section {{class}}" data-menuanchor="" data-category="{{category}}">
+        <h1>{{title}}</h1>
+        <a>{{authorUrl}}</a>
+        <section class="article-body">{{{body}}}</section>
+        <time datetime="{{publishedOn}}">{{publishedOn}}</time>
+      </div>
+    </script>
+
 </head>
 <body>
 
