@@ -1,15 +1,16 @@
+'use strict';
 var allProjects = [];
 
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				menu: '#menu',
-				scrollingSpeed: 1000
-			});
+  $('#fullpage').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+	  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		menu: '#menu',
+		scrollingSpeed: 1000
+		});
 });
 
-var Project = function(input) {
+var PortfolioItem = function(input) {
   for (key in input) {
     this[key] = input[key];
   }
@@ -20,7 +21,7 @@ var Project = function(input) {
   // this.body = input.body
 }
 
-Project.prototype.toHtml = function() {
+PortfolioItem.prototype.toHtml = function() {
   var source = $('#project-template').html();
   var templateRender = Handlebars.compile(source);
 
@@ -51,8 +52,8 @@ function getData() {
   }
 }
 
-projectList.forEach(function(projectListItem) {
-  allProjects.push(new Project(projectListItem));
+projectList.forEach(function(ele) {
+  allProjects.push(new PortfolioItem(ele));
 });
 
 allProjects.forEach(function(a){
