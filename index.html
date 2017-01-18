@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+   <link rel="stylesheet" href="jquery.css" type="text/css" />
   <script id="project-template" type="text/x-handlebars-template">
       <div class="section {{class}}" data-menuanchor="" data-category="{{category}}">
         <h1>{{title}}</h1>
@@ -41,6 +41,52 @@
     overflow: hidden;
 
   }
+
+  h1 {
+  font-size: 3.157em;
+}
+h2 {
+  font-size: 2.369em;
+}
+h3 {
+  font-size: 1.777em;
+}
+h4, .article-body, time {
+  font-size: 1.333em;
+}
+.desc {
+  font-size: 20px;
+  text-align: center;
+}
+.article-body {
+  overflow: hidden;
+}
+.article-body img {
+  display: block;
+}
+.social {
+  width: 30px;
+  height: 30px;
+}
+  .slideshow {
+  min-width: 480px;
+  height: 100vh;
+  text-align: center;
+}
+  .battleship {
+  background-image: url('assets/DestroyerDestroying.jpg');
+  background-repeat: no-repeat;
+  /*width: 100vw;
+  height: 100vh;*/
+}
+.busmall {
+  background-image: url('assets/catalog-img2-900.jpg');
+  background-repeat: no-repeat;
+}
+.aboutme {
+  background-image: url('assets/temp pic.jpg');
+  background-repeat: no-repeat;
+}
   .tagline{
     background: black;
     color: oldlace;
@@ -54,6 +100,9 @@
     margin: auto;
     overflow: auto;
     /*margin-left: 300px;*/
+}
+#menu {
+  display: none;
 }
 #gallery{
   line-style: none;
@@ -104,32 +153,18 @@ position: relative;
 
 </nav>
 </header>
+<ul id="menu">
+     <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+     <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+     <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+     <li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+   </ul>
 
+ <section class="slideshow" id="fullpage"></section>
 
-<!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
-<section class="tagline">
-  <div class="container">
-    <h1>View My Work</h1>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <h1 id="heading">All Projects</h1>
-    <ul id="gallery">
-      <li><a href="#"><img src="img/web1.jpg"></a></li>
-      <li><a href="#"><img src="img/web2.jpg"></a></li>
-      <li><a href="#"><img src="img/web3.jpg"></a></li>
-      <li><a href="#"><img src="img/web4.jpg"></a></li>
-      <li><a href="#"><img src="img/web5.jpg"></a></li>
-    </ul>
-  </div>
-</section>
-<footer>
-
-</footer>
+<script type="text/javascript" src="jquery.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
- <script src="objectData.js"></script>
+ <script src= "projects.js"></script>
  <script  src="app.js"></script>
- <script src= "slideshow.js"></script>
 </body>
 </html>
