@@ -38,21 +38,21 @@ PortfolioItem.prototype.toHtml = function() {
 }
 
 function getData() {
-  if (localStorage.portfolioData) {
+  if (localStorage.projectsArray) {
     console.log('found data in localStorage');
     // load from local storage
   } else {
     // read from file
     console.log('data not found in localStorage');
-    var temp = $.getJSON('../data/projects.old.json')
+    var temp = $.getJSON('projects.json')
     console.log('temp:', temp);
-    localStorage.setItem('portfolioData', JSON.stringify(temp));
+    localStorage.setItem('projectsArray', JSON.stringify(temp));
     console.log(JSON.stringify(temp));
     // write to local storage
   }
 }
 
-projectList.forEach(function(ele) {
+projectsArray.forEach(function(ele) {
   allProjects.push(new PortfolioItem(ele));
 });
 

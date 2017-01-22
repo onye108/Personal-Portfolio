@@ -1,0 +1,158 @@
+.mainimg {
+  z-index: -999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/triangle_inverted_black_white_92770_602x339.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.5;
+  background-position: center;
+}
+button{
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  height: 45px;
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  font-size: 25px;
+}
+/*///////homepage////////*/
+body{
+  z-index: -999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/download.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 1;
+  background-position: center;
+}
+a{
+  text-decoration: none;
+}
+h2{ text-align: center;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+}
+header{
+  background-color: black;
+  min-height: 60px;
+}
+header a {
+  color: oldlace;
+}
+/*.title{
+  float: left;
+  width: 30%;
+  margin-top: 15px;
+}*/
+nav{
+  float: right;
+  width: 70%;
+}
+nav ul{
+  float: right;
+}
+nav li{
+  list-style: none;
+  float:left;
+  padding: 10px;
+}
+nav a{
+  padding-bottom: 5px;
+}
+nav li.current a, nav a:hover{
+  color:'black';
+  border-bottom: #345 4px solid;
+}
+section{
+  padding: 20px 0;
+  overflow: hidden;
+}
+.tagline{
+  background: #03899c;
+}
+.tagline h1{
+  text-align: center;
+  font-size: 36px;
+}
+#gallery{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#gallery li{
+  display: block;
+  float: left;
+  width: 23%;
+  cursor: crosshair;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 20px 0 0;
+  position: relative;
+
+}
+#gallery img{
+  height: 200px;
+  width: 300px;
+  border: 3px solid oldlace;
+  border-radius: 6px;
+
+}
+footer{
+  background-color: oldlace;
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+}
+.overlay{
+  display: none;
+  background: #03899c no-repeat top center ;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 6px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.overlay h1{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+#selfie{
+  clear:both;
+  float: left;
+  border-radius: 150px;
+  position: relative;
+}
+#biotext{
+  position: relative;
+  clear:right;
+  float:right;
+  overflow: scroll;
+  width:60%;
+  height:350px;
+  border: 4px solid #03899c;
+}
