@@ -12,6 +12,6 @@ projectsArray.forEach(function(ele){
   allProjects.push(new PortfolioItem(ele));
 });
 
-allProjects.forEach(function(a){
-  $('.carousel-inner').append(a.toHtml)
+PortfolioItem.forEach(function(a){
+  $('.menu').append(a.toHtml)
 });
